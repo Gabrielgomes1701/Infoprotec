@@ -5,7 +5,7 @@ body {
     color: #222222;
     margin: 0;
     padding: 0;
-    font-size: 20px; /* Fonte maior para facilitar a leitura */
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -60,8 +60,8 @@ li {
     margin-bottom: 15px;
 }
 
-/* Botão grande e visível */
-button {
+/* Botão principal de dica */
+#btnDica {
     background-color: #2e7d32;
     color: white;
     font-size: 22px;
@@ -74,8 +74,42 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
+#btnDica:hover {
     background-color: #1b5e20;
+}
+
+/* Botões de Áudio (Acessibilidade) */
+.btn-audio {
+    background-color: #0288d1;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.btn-audio:hover {
+    background-color: #01579b;
+}
+
+.btn-parar {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-parar:hover {
+    background-color: #b71c1c;
 }
 
 .dica-box {
@@ -85,7 +119,7 @@ button:hover {
     background-color: #e3f2fd;
     padding: 15px;
     border-radius: 8px;
-    display: none; /* Inicia escondido */
+    display: none;
 }
 
 footer {

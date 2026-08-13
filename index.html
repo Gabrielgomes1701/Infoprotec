@@ -11,30 +11,34 @@
     <header>
         <h1>Navegue com Segurança 🛡️</h1>
         <p>Aprenda a se proteger de golpes e notícias falsas na internet de forma simples.</p>
+        <button class="btn-audio" onclick="lerTexto('Navegue com Segurança. Aprenda a se proteger de golpes e notícias falsas na internet de forma simples.')">🔊 Ouvir o título</button>
     </header>
 
     <main>
         <section class="card alerta">
             <h2>🚨 A Regra de Ouro</h2>
-            <p><strong>NUNCA</strong> envie senhas, códigos recebidos por SMS ou faça transferências para desconhecidos (nem para quem diz ser do seu banco).</p>
+            <p id="textoRegraOuro"><strong>NUNCA</strong> envie senhas, códigos recebidos por SMS ou faça transferências para desconhecidos (nem para quem diz ser do seu banco).</p>
+            <button class="btn-audio" onclick="lerSecao('textoRegraOuro')">🔊 Ouvir a Regra de Ouro</button>
         </section>
 
         <section class="card">
             <h2>⚠️ Principais Golpes no WhatsApp e Ligação</h2>
-            <ul>
+            <ul id="textoGolpes">
                 <li><strong>Mensagem de parente pedindo dinheiro:</strong> Se alguém usar a foto do seu filho ou neto em um número novo pedindo Pix, ligue para o número antigo dele antes de transferir qualquer valor!</li>
                 <li><strong>Falso funcionário de banco:</strong> O banco nunca liga pedindo para você cancelar uma transferência ou digitar sua senha. Desligue e vá até a sua agência.</li>
                 <li><strong>Prêmios e promoções fáceis:</strong> Se você não se inscreveu em nada, não ganhou nada. Cuidado com links enviados por mensagem.</li>
             </ul>
+            <button class="btn-audio" onclick="lerSecao('textoGolpes')">🔊 Ouvir os Principais Golpes</button>
         </section>
 
         <section class="card">
             <h2>📰 Como Descobrir se uma Notícia é Falsa?</h2>
-            <ol>
+            <ol id="textoFakeNews">
                 <li><strong>Títulos exagerados:</strong> Notícias falsas costumam usar palavras como "URGENTE", "REVELADO O SEGREDO" ou pedem para você "compartilhar rápido".</li>
                 <li><strong>Olhe quem escreveu:</strong> Verifique se a notícia saiu em jornais conhecidos (televisão, rádio ou grandes portais de notícia).</li>
                 <li><strong>Consulte a família:</strong> Se ficar na dúvida, pergunte para algum parente ou amigo antes de repassar a mensagem.</li>
             </ol>
+            <button class="btn-audio" onclick="lerSecao('textoFakeNews')">🔊 Ouvir sobre Fake News</button>
         </section>
 
         <section class="card">
@@ -42,11 +46,13 @@
             <p>Clique no botão abaixo para ver um conselho rápido:</p>
             <button id="btnDica" onclick="mostrarDica()">Ver Dica de Segurança</button>
             <p id="textoDica" class="dica-box"></p>
+            <button id="btnOuvirDica" class="btn-audio" style="display: none;" onclick="lerSecao('textoDica')">🔊 Ouvir a Dica</button>
         </section>
     </main>
 
     <footer>
         <p>Compartilhe este guia com seus amigos e família! A informação é nossa melhor proteção.</p>
+        <button class="btn-parar" onclick="pararFala()">⏹️ Parar de Ouvir</button>
     </footer>
 
     <script src="script.js"></script>
