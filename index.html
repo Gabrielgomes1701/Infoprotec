@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Curiosidades sobre Tigres</title>
+    <title>Navegue com Segurança - Guia Antigolpes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <h1>Está certo isso?</h1>
-        <nav>
-            <a href="#">Início</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Confira a resposta correta abaixo:</h2>
-        
-        <article class="cartao">
-            <div class="cartao-interno">
-                
-                <div class="cartao-frente">
-                    <img src="https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?q=80&w=400" alt="Tigre" class="cartao-imagem">
-                    <p class="pergunta">Tigres conseguem ficar anos sem se alimentarem!</p>
-                </div>
-                
-                <div class="cartao-verso">
-                    <img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?q=80&w=400" alt="Tigre olhando" class="cartao-imagem">
-                    <p class="resposta">Um tigre adulto consegue sobreviver de 10 a 15 dias sem comer, desde que tenha acesso à água. No entanto, se ficarem sem água por 3 a 4 dias, morrem de desidratação.</p>
-                </div>
 
-            </div>
-        </article>
+    <header>
+        <h1>Navegue com Segurança 🛡️</h1>
+        <p>Aprenda a se proteger de golpes e notícias falsas na internet de forma simples.</p>
+    </header>
+
+    <main>
+        <section class="card alerta">
+            <h2>🚨 A Regra de Ouro</h2>
+            <p><strong>NUNCA</strong> envie senhas, códigos recebidos por SMS ou faça transferências para desconhecidos (nem para quem diz ser do seu banco).</p>
+        </section>
+
+        <section class="card">
+            <h2>⚠️ Principais Golpes no WhatsApp e Ligação</h2>
+            <ul>
+                <li><strong>Mensagem de parente pedindo dinheiro:</strong> Se alguém usar a foto do seu filho ou neto em um número novo pedindo Pix, ligue para o número antigo dele antes de transferir qualquer valor!</li>
+                <li><strong>Falso funcionário de banco:</strong> O banco nunca liga pedindo para você cancelar uma transferência ou digitar sua senha. Desligue e vá até a sua agência.</li>
+                <li><strong>Prêmios e promoções fáceis:</strong> Se você não se inscreveu em nada, não ganhou nada. Cuidado com links enviados por mensagem.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>📰 Como Descobrir se uma Notícia é Falsa?</h2>
+            <ol>
+                <li><strong>Títulos exagerados:</strong> Notícias falsas costumam usar palavras como "URGENTE", "REVELADO O SEGREDO" ou pedem para você "compartilhar rápido".</li>
+                <li><strong>Olhe quem escreveu:</strong> Verifique se a notícia saiu em jornais conhecidos (televisão, rádio ou grandes portais de notícia).</li>
+                <li><strong>Consulte a família:</strong> Se ficar na dúvida, pergunte para algum parente ou amigo antes de repassar a mensagem.</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>💡 Ficou na dúvida se algo é verdade?</h2>
+            <p>Clique no botão abaixo para ver um conselho rápido:</p>
+            <button id="btnDica" onclick="mostrarDica()">Ver Dica de Segurança</button>
+            <p id="textoDica" class="dica-box"></p>
+        </section>
     </main>
+
     <footer>
-        <p>Projeto feito por Gabriel Gomes</p>
+        <p>Compartilhe este guia com seus amigos e família! A informação é nossa melhor proteção.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
